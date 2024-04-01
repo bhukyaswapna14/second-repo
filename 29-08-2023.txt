@@ -22,7 +22,7 @@
     Creating Image from Running "EC2 Instance".
         1.goto "Insatcnes" and select "Instance".
         2.Actions--->Image and Templates-->Create Image
-        3.Mention "Image" name
+        3.Mention "Image" 
   
 
       
