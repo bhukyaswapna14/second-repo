@@ -1,0 +1,32 @@
+1.Attaching and Detaching volumes
+     -->If you want to attach a volume to the "EC2 instance" then 
+        volume and instance must belongs to same "Availability Zone".
+     1.Select volume-->Actions-->Attach Volume
+     2.Select the instance that you want to attach.
+     3.Click "Attach Volume"
+   
+2.Creating snapshot from instance or volume
+     1.Select the volume
+     2.Actions-->Create Snapshot
+     3.Give some description and click "Create Snapshot"
+   
+3.creating custom-ami from ec2 instance
+         AMI-->mysql,php,java,postgresql,node.js
+               |
+       if same configuration used by multiple people then it is better to create "Custom AMI" from already existing instance.
+    Creating Image from Snapshot:
+        1.goto "snapshots" and select "required snapshots"
+        2.Actions-->Create Image from Snapshot
+        3.Enter Image name and description
+        4.Choose default settings
+    Creating Image from Running "EC2 Instance".
+        1.goto "Insatcnes" and select "Instance".
+        2.Actions--->Image and Templates-->Create Image
+        3.Mention "Image" name
+  
+
+      
+4.creating ec2 instance from custom ami
+         1.goto "AMI" and select "CUSTOM-AMI"
+         2.Click "Launch Instance from AMI".
+         3.Enter all parameter values except "Selection of image".
